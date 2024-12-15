@@ -3,6 +3,7 @@
     padding: 10px 10px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .countriesContainer.nightMode {
@@ -38,7 +39,23 @@
 }
 
 /* tablet size devices*/
-@media (min-width: 376px) and (max-width: 1023px) {}
+@media (min-width: 376px) and (max-width: 1023px) {
+    .countriesContainer {
+        margin: 20px 30px;
+    }
+
+    .countryContainer {
+        margin: 20px 10px;
+    }
+}
 
 /* mobile size devices*/
-@media (max-width: 375px) {}
+@media (max-width: 375px) {
+    .countriesContainer {
+        margin: 15px 10px;
+    }
+
+    .countryContainer {
+        margin: 10px 0;
+    }
+}
