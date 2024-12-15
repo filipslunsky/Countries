@@ -1,0 +1,28 @@
+.smallFlagContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.smallFlagImg {
+    max-width: 270px;
+    max-height: 180px;
+    border-radius: 10px;
+}
+
+.countryInfoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-end;
+    padding: 15px 0 10px 15px;
+}
+
+.countryInfoItem {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.countryInfoValue {
+    font-weight: 400;
+    color: hsl(0, 0%, 52%);
+}

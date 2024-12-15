@@ -31,17 +31,17 @@ const CountryList = () => {
     };
 
     if (status === 'failed') {
-        return (<h2 className='errorMessage'>Ooops, failed to load the countries, please refresh or try again later...</h2>)
+        return (<h2 className={nightMode ? 'errorMessage nightMode' : 'errorMessage'}>Ooops, failed to load the countries, please refresh or try again later...</h2>)
     };
 
     if (status === 'idle' || status === 'loading') {
-        return (<h2 className='loadingMessage'>Loading...</h2>)
+        return (<h2 className={nightMode ? 'loadingMessage nightMode' : 'loadingMessage'}>Loading...</h2>)
     };
 
     return (
         <>
             <SearchBar />
-            <div className="countriesContainer">
+            <div className={nightMode ? 'countriesContainer nightMode' : 'countriesContainer'}>
                 {   filteredCountries.length === 0
                     ?
                     "No countries match your search criteria."
@@ -49,7 +49,7 @@ const CountryList = () => {
                     filteredCountries.map((item) => {
                         return (
                             <div
-                            className="countryContainer"
+                            className={nightMode ? 'countryContainer nightMode' : 'countryContainer'}
                             key={item.alpha3Code}
                             onClick={() => {navigateToDetail(item.alpha3Code)}}
                             >

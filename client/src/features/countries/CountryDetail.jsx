@@ -46,7 +46,7 @@ const CountryDetail = () => {
                         <h2 className="detailCountryName">{country.name}</h2>
                         <div className="detailInfoItems">
                             <p className="detailInfoItem">Native Name: <span className="detailInfoValue">{country.nativeName}</span></p>
-                            <p className="detailInfoItem">Population: <span className="detailInfoValue">{country.population}</span></p>
+                            <p className="detailInfoItem">Population: <span className="detailInfoValue">{country.population.toLocaleString()}</span></p>
                             <p className="detailInfoItem">Region: <span className="detailInfoValue">{country.region}</span></p>
                             <p className="detailInfoItem">Sub Region: <span className="detailInfoValue">{country.subregion ? country.subregion : 'no sub region'}</span></p>
                             <p className="detailInfoItem">Capital: <span className="detailInfoValue">{country.capital && country.capital > 0 ? country.capital : 'no capital'}</span></p>
