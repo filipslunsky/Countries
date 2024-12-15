@@ -4,6 +4,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    min-height: 700px;
 }
 
 .countriesContainer.nightMode {
@@ -37,6 +38,8 @@
     background-color: hsl(208, 22%, 35%);
     color: hsl(0, 0%, 98%);
 }
+
+.errorMessage, .loadingMessage {}
 
 /* tablet size devices*/
 @media (min-width: 376px) and (max-width: 1023px) {
