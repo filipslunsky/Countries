@@ -3,7 +3,7 @@ const Country = ({flag, name, population, region, capital}) => {
         <>
             <div className="countryContainer">
                 <div className="flagContainer">
-                    <img src={flag} alt="flag image" />
+                    <img className="smallFlagImg" src={flag} alt="flag image" />
                 </div>
                 <div className="countryInfoContainer">
                     <h3 className="countryName">{name}</h3>

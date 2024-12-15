@@ -25,6 +25,10 @@ const CountryList = () => {
         return matchesRegion && matchesSearch;
     });
 
+    const navigateToDetail = (countryCode) => {
+        navigate(`/country/${countryCode}`);
+    };
+
     if (status === 'failed') {
         return (<h2 className='errorMessage'>Ooops, failed to load the countries, please refresh or try again later...</h2>)
     };
@@ -46,6 +50,7 @@ const CountryList = () => {
                             <div
                             className="countryContainer"
                             key={item.alpha3Code}
+                            onClick={() => {navigateToDetail(item.alpha3Code)}}
                             >
                                 <Country
                                 flag={item.flags.png}
