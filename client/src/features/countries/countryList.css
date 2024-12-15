@@ -41,7 +41,7 @@
 /* tablet size devices*/
 @media (min-width: 376px) and (max-width: 1023px) {
     .countriesContainer {
-        margin: 20px 30px;
+        padding: 20px 30px;
     }
 
     .countryContainer {
@@ -52,10 +52,10 @@
 /* mobile size devices*/
 @media (max-width: 375px) {
     .countriesContainer {
-        margin: 15px 10px;
+        padding: 15px 10px;
     }
 
     .countryContainer {
-        margin: 10px 0;
+        margin: 10px 5px;
     }
 }
