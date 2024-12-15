@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setSearch, setRegion } from './state/slice';
 import searchIcon from '../../assets/img/search_icon.svg';
+import searcIconLight from '../../assets/img/search_icon_light.svg';
 import './searchBar.css';
 
 const SearchBar = () => {
@@ -11,6 +12,7 @@ const SearchBar = () => {
 
     const search = useSelector(state => state.countries.search);
     const region = useSelector(state => state.countries.region);
+    const nightMode = useSelector(state => state.countries.nightMode);
 
     const handleSearch = () => {
         const search = searchRef.current.value;
@@ -24,20 +26,20 @@ const SearchBar = () => {
 
     return (
         <>
-            <div className="searchBarContainer">
+            <div className={nightMode ? "searchBarContainer nightMode" : "searchBarContainer"}>
                 <div className="searchInputContainer">
-                    <img className='searchIcon' src={searchIcon} alt="search icon" />
+                    <img className={nightMode ? "searchIcon nightMode" : "searchIcon"} src={nightMode ? searcIconLight : searchIcon} alt="search icon" />
                     <input
                     type="text"
                     placeholder='Search for a country...'
-                    className='searchInput'
+                    className={nightMode ? "searchInput nightMode" : "searchInput"}
                     ref={searchRef}
                     onChange={handleSearch}
                     defaultValue={search}
                     />
                 </div>
                 <select
-                className='selectRegion'
+                className={nightMode ? "selectRegion nightMode" : "selectRegion"}
                 onChange={handleSelect}
                 ref={regionRef}
                 value={region}

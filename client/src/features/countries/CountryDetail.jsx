@@ -9,10 +9,9 @@ const CountryDetail = () => {
     const { countryCode } = useParams();
 
     const countries = useSelector(state => state.countries.countries);
-    const country = countries.filter(item => item.alpha3Code === countryCode)[0];
+    const nightMode = useSelector(state => state.countries.nightMode);
 
-    console.log(countryCode);
-    console.log(country);
+    const country = countries.filter(item => item.alpha3Code === countryCode)[0];
 
     const getNeighbors = () => {
         if (!country.borders) return [];
@@ -26,9 +25,6 @@ const CountryDetail = () => {
     };
 
     const neighbors = getNeighbors();
-
-    console.log(neighbors);
-    
 
     const navigateBack = () => {
         navigate('/');

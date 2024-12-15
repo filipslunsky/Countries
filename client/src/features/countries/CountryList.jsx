@@ -14,6 +14,7 @@ const CountryList = () => {
     const region = useSelector(state => state.countries.region);
     const search = useSelector(state => state.countries.search);
     const status = useSelector(state => state.countries.status);
+    const nightMode = useSelector(state => state.countries.nightMode);
 
     useEffect(() => {
         dispatch(getCountries());
