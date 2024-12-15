@@ -4119,6 +4119,7 @@
     "capital": "Prague",
     "altSpellings": ["CZ", "Česká republika", "Česko"],
     "subregion": "Central Europe",
+    "borders": ["DEU", "POL", "SVK", "AUT"],
     "region": "Europe",
     "population": 10698896,
     "latlng": [49.75, 15.5],

@@ -1,3 +1,113 @@
+.detailMainContainer {
+    background-color: hsl(0, 0%, 98%);
+    padding-top: 60px;
+    color: hsl(200, 15%, 8%);
+    height: 700px;
+}
+
+.detailMainContainer.nightMode {
+    background-color: hsl(207, 26%, 17%);
+    color: hsl(0, 0%, 98%);
+}
+
+.backButton {
+    width: 110px;
+    height: 30px;
+    margin: 40px 60px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    color: hsl(200, 15%, 8%);
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backButton.nightMode {
+    background-color: hsl(209, 23%, 22%);
+    color: hsl(0, 0%, 100%);
+}
+
+.backButton:hover {
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.2);
+}
+
 .backArrow {
     height: 15px;
+    margin-right: 10px;
+}
+
+.detailContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detailFlagContainer {
+    width: 45%;
+    margin: 10px 60px;
+}
+
+.flagLarge {
+    width: 100%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    max-height: 500px;
+}
+
+.detailInfoContainer {
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+    width: 40%;
+}
+
+.detailCountryName {
+    margin-bottom: 20px;
+}
+
+.detailInfoItems {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.detailInfoItem {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.detailInfoValue {
+    font-weight: 300;
+}
+
+.neigborsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    align-items: center;
+}
+
+.neighborItem {
+    padding: 4px 8px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.neighborItem.nightMode {
+    background-color: hsl(209, 23%, 22%);
+    color: hsl(0, 0%, 100%);
+}
+
+.neighborItem:hover {
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.2);
+}
+
+.neighborItem.nightMode:hover {
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.2);
 }

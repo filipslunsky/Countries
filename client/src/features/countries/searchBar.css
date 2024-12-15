@@ -1,4 +1,5 @@
 .searchBarContainer {
+    padding-top: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,6 +30,10 @@
     border-radius: 0 8px 8px 0;
 }
 
+.searchInput:focus {
+    outline: none;
+}
+
 .searchInput.nightMode {
     background-color: hsl(209, 23%, 22%);
     color: hsl(0, 0%, 98%);
@@ -53,6 +58,10 @@
     border: none;
     border-radius: 8px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.selectRegion:focus {
+    outline: none;
 }
 
 .selectRegion.nightMode {
