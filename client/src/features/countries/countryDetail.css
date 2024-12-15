@@ -163,7 +163,9 @@
         margin-top: 15px;
     }
 
-    .detailCountryName {}
+    .detailCountryName {
+        font-size: 19px;
+    }
 
     .detailInfoItem {
         font-size: 14px;
