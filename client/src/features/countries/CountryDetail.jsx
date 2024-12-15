@@ -1,6 +1,7 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import prevIcon from '../../assets/img/arrow_left.png';
+import prevIcon from '../../assets/img/arrow_back.svg';
+import './countryDetail.css';
 
 const CountryDetail = () => {
     const navigate = useNavigate();
@@ -40,7 +41,7 @@ const CountryDetail = () => {
     return (
         <>
             <div className="detailMainContainer">
-                <button className='backButton' onClick={navigateBack}><img src={prevIcon} alt="left arrow" />Back</button>
+                <button className='backButton' onClick={navigateBack}><img className='backArrow' src={prevIcon} alt="left arrow" />Back</button>
                 <div className="detailContainer">
                     <div className="detailFlagContainer">
                         <img className='flagLarge' src={country.flag} alt="flag image" />
