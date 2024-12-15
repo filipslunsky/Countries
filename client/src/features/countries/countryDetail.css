@@ -113,7 +113,65 @@
 }
 
 /* tablet size devices*/
-@media (min-width: 376px) and (max-width: 1023px) {}
+@media (min-width: 376px) and (max-width: 1023px) {
+    .detailContainer {
+        flex-direction: column;
+    }
+
+    .detailFlagContainer {
+        width: 70%;
+        margin: 10px 40px;
+    }
+
+    .backButton {
+        margin: 30px 50px;
+    }
+
+    .detailInfoContainer {
+        margin-top: 30px;
+        margin-right: 0px;
+        width: 70%;
+    }
+}
 
 /* mobile size devices*/
-@media (max-width: 375px) {}
+@media (max-width: 375px) {
+    .detailContainer {
+        flex-direction: column;
+    }
+
+    .detailFlagContainer {
+        width: 90%;
+        margin: 10px 40px;
+    }
+
+    .backButton {
+        margin: 15px 20px;
+    }
+
+    .detailInfoContainer {
+        margin-top: 30px;
+        margin-right: 0px;
+        width: 89%;
+    }
+
+    .detailInfoItems {
+        flex-direction: column;
+    }
+
+    .detailInfoItemsRight {
+        margin-top: 15px;
+    }
+
+    .detailCountryName {}
+
+    .detailInfoItem {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .neighborItem {
+        padding: 2px 4px;
+        font-size: 14px;
+    }
+}
