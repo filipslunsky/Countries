@@ -9,15 +9,13 @@ const Header = () => {
 
     const nightMode = useSelector(state => state.countries.nightMode);
 
-    console.log(nightMode);
-
     const handleToggleNightMode = () => {
         dispatch(toggleNightMode());
     };
 
     return (
         <>
-            <div className="headerContainer">
+            <div className={nightMode ? "headerContainer nightMode" : "headerContainer"}>
                 <Logo />
                 <div className="nightModeContainer" onClick={handleToggleNightMode}>
                     <img className='nightModeIcon' src={moonIcon} alt="moon icon" />
