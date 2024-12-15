@@ -6,10 +6,12 @@ const initialState = {
     countries: [],
     status: 'idle',
     error: null,
-    nightMode: false
+    nightMode: false,
+    region: '',
+    search: ''
 };
 
-const getCountries = createAsyncThunk('countries/getCountries', async () => {
+export const getCountries = createAsyncThunk('countries/getCountries', async () => {
     try {
         const res = await fetch(COUNTRIES_URL);
         const data = await res.json();
@@ -23,8 +25,14 @@ const countriesSlice = createSlice({
     name: 'countries',
     initialState,
     reducers: {
-        toggleNightMode: () => {
+        toggleNightMode: (state) => {
             state.nightMode = !state.nightMode;
+        },
+        setRegion: (state, action) => {
+            state.region = action.payload.region;
+        },
+        setSearch: (state, action) => {
+            state.search = action.payload.search;
         },
     },
     extraReducers: (builder) => {
@@ -38,11 +46,10 @@ const countriesSlice = createSlice({
           })
           .addCase(getCountries.fulfilled, (state, action) => {
             state.status = 'success';
-            state.planets = action.payload;
+            state.countries = action.payload;
           })
     }
 });
 
-export const { actions: countriesActions } = countriesSlice;
-export { getCountries, toggleNightMode };
+export const { toggleNightMode, setRegion, setSearch } = countriesSlice.actions;
 export default countriesSlice.reducer;
