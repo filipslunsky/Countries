@@ -1,7 +1,8 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { toggleNightMode } from './state/slice';
 import Logo from './Logo';
-import moonIcon from '../../assets/img/icon-moon.svg';
+import moonIcon from '../../assets/img/dark_mode.png';
+import fullMoonIcon from '../../assets/img/dark_mode_night.png';
 import './header.css';
 
 const Header = () => {
@@ -20,8 +21,8 @@ const Header = () => {
             <div className="headerContainer">
                 <Logo />
                 <div className="nightModeContainer" onClick={handleToggleNightMode}>
-                    <img className='nightModeIcon' src={moonIcon} alt="moon icon" />
-                    <p className="nightModeDescription">Night Mode</p>
+                    <img className='nightModeIcon' src={nightMode ? fullMoonIcon : moonIcon} alt="moon icon" />
+                    <p className="nightModeDescription">{nightMode ? 'Night Mode On' : 'Night Mode Off'}</p>
                 </div>
             </div>
         </>

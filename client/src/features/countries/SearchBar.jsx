@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setSearch, setRegion } from './state/slice';
-import searchIcon from '../../assets/img/icon-search.svg';
+import searchIcon from '../../assets/img/search_icon.png';
 import './searchBar.css';
 
 const SearchBar = () => {
