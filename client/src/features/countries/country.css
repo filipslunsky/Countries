@@ -26,3 +26,9 @@
     font-weight: 400;
     color: hsl(0, 0%, 52%);
 }
+
+/* tablet size devices*/
+@media (min-width: 376px) and (max-width: 1023px) {}
+
+/* mobile size devices*/
+@media (max-width: 375px) {}

@@ -3,3 +3,19 @@
     font-weight: 700;
     margin: 20px 60px;
 }
+
+/* tablet size devices*/
+@media (min-width: 376px) and (max-width: 1023px) {
+    .logo {
+        font-size: 17px;
+        margin: 20px 40px;
+    }
+}
+
+/* mobile size devices*/
+@media (max-width: 375px) {
+    .logo {
+        font-size: 12px;
+        margin: 15px 20px;
+    }
+}

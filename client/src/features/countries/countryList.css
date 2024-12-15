@@ -36,3 +36,9 @@
     background-color: hsl(208, 22%, 35%);
     color: hsl(0, 0%, 98%);
 }
+
+/* tablet size devices*/
+@media (min-width: 376px) and (max-width: 1023px) {}
+
+/* mobile size devices*/
+@media (max-width: 375px) {}

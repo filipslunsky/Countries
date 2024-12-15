@@ -32,3 +32,35 @@
 .nightModeDescription {
     font-size: 15px;
 }
+
+/* tablet size devices*/
+@media (min-width: 376px) and (max-width: 1023px) {
+    .nightModeContainer {
+        margin: 15px 40px;
+    }
+
+    .nightModeDescription {
+        font-size: 11px;
+    }
+
+    .nightModeIcon {
+        height: 23px;
+        margin-right: 4px;
+    }
+}
+
+/* mobile size devices*/
+@media (max-width: 375px) {
+    .nightModeContainer {
+        margin: 10px 20px;
+    }
+
+    .nightModeDescription {
+        font-size: 11px;
+    }
+
+    .nightModeIcon {
+        height: 20px;
+        margin-right: 3px;
+    }
+}

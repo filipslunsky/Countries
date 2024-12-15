@@ -111,3 +111,9 @@
 .neighborItem.nightMode:hover {
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.2);
 }
+
+/* tablet size devices*/
+@media (min-width: 376px) and (max-width: 1023px) {}
+
+/* mobile size devices*/
+@media (max-width: 375px) {}

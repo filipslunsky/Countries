@@ -72,3 +72,9 @@
 .selectRegion:focus {
     border: none;
 }
+
+/* tablet size devices*/
+@media (min-width: 376px) and (max-width: 1023px) {}
+
+/* mobile size devices*/
+@media (max-width: 375px) {}
