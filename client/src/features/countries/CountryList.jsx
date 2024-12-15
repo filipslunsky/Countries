@@ -58,7 +58,7 @@ const CountryList = () => {
                                 name={item.name}
                                 population={item.population}
                                 region={item.region}
-                                capital={item.capital}
+                                capital={item.capital && item.capital.length > 0 ? item.capital : 'no capital'}
                                 />
                             </div>
                         )

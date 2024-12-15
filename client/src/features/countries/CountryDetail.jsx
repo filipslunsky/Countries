@@ -53,7 +53,7 @@ const CountryDetail = () => {
                                 <p className="detailInfoItem">Population: <span className="detailInfoValue">{country.population.toLocaleString()}</span></p>
                                 <p className="detailInfoItem">Region: <span className="detailInfoValue">{country.region}</span></p>
                                 <p className="detailInfoItem">Sub Region: <span className="detailInfoValue">{country.subregion ? country.subregion : 'no sub region'}</span></p>
-                                <p className="detailInfoItem">Capital: <span className="detailInfoValue">{country.capital && country.capital > 0 ? country.capital : 'no capital'}</span></p>
+                                <p className="detailInfoItem">Capital: <span className="detailInfoValue">{country.capital && country.capital.length > 0 ? country.capital : 'no capital'}</span></p>
                             </div>
                             <div className="detailInfoItemsRight">    
                                 <p className="detailInfoItem">Top Level Domain: <span className="detailInfoValue">{country.topLevelDomain ? country.topLevelDomain.join(', ') : 'no domain'}</span></p>
